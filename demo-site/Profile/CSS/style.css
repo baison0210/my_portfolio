@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+/* 全体設定
+-------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    letter-spacing: auto;
+    line-height: auto;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-rendering: optimizeLegibility;
+    background: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    padding: 0 15px;
+}
+
+.textl {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.textm {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.texts {
+    font-size: 14.4px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #24292e;
+}
+
+/* header
+sp用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+header {
+    background-color: #fff;
+    width: auto;
+    height: 60px;
+}
+
+.header-logo {
+    display: inline-block;
+    margin: 10px 15px;
+    position: relative;
+}
+
+.header-nav {
+    padding: 10px 0;
+    margin: 10px 0;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.header-nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* header
+pc用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+@media screen and (min-width:768px) {
+    header {
+        width: 100%;
+        max-width: 857.6px;
+        margin: 0 211px;
+    }
+
+    .header-logo {
+        margin: 10px 0;
+    }
+
+    .header-nav {
+        right: 211.2px;
+    }
+}
+
+/* .key-visual
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.key-visual {
+    background: url(../IMG/main-bicycle.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 600px;
+}
+
+/* .profile
+sp用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.profile {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding: 50px 0;
+}
+
+.profile-title {
+    width: 106px;
+    border-bottom: 1px solid #383e45;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.profile-img {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.profile-text .textm {
+    margin-bottom: 10px;
+}
+
+/* .profile
+pc用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+@media screen and (min-width:768px) {
+
+    .profile-title {
+        margin-top: 20px;
+        margin-bottom: 65px;
+    }
+
+    .profile-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+/* .bicycle
+sp用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.bicycle {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding: 50px 0;
+}
+
+.bicycle-title {
+    width: 122px;
+    border-bottom: 1px solid #383e45;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.bicycle-img {
+    margin-bottom: 10px;
+}
+
+.bicycle-img img {
+    width: 100%;
+    height: auto;
+}
+
+.bicycle-text {
+    text-align: center;
+}
+
+.bicycle-text .textm {
+    margin-bottom: 10px;
+}
+
+.bicycle-text .texts {
+    margin-bottom: 30px;
+}
+
+/* .bicycle-detail
+sp用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.bicycle-detail {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.img-detail_sp {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.img-detail_pc {
+    display: none;
+}
+
+.textm-detail {
+    font-size: 21.6px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.texts-detail {
+    text-align: left;
+    font-size: 14.4px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.to-top {
+    margin-top: 60px;
+}
+
+/* .bicycle
+pc用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+@media screen and (min-width:768px) {
+    .bicycle-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.25%;
+    }
+}
+
+/* .bicycle-detail
+pc用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+@media screen and (min-width:768px) {
+    .bicycle-detail {
+        background-color: #fff;
+        width: auto;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .bicycle-detail-container {
+        padding: 0 211px;
+    }
+
+    .img-detail_sp {
+        display: none;
+    }
+
+    .img-detail_pc {
+        display: block;
+        width: 100%;
+        max-width: 857.6px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    .textm-detail {
+        font-size: 21.6px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .texts-detail {
+        text-align: left;
+        font-size: 14.4px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        padding: 0 30px;
+    }
+
+    .to-top {
+        margin-top: 60px;
+    }
+}
+
+/* footer
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+footer {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding: 10px 0;
+}
+
+.footer-small {
+    text-align: center;
+    margin-top: 10px;
+}
+
+small {
+    font-size: 8px;
+    font-weight: 300;
+}

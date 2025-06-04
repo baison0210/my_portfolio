@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web制作の練習過程です!試行錯誤しながらやってます。" />
+    <meta name="author" content="Yuki Segawa" />
+    <link rel="icon" href="../IMG_Gallery/favicon.ico">
+    <link rel="stylesheet" href="../CSS_Gallery/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../CSS_Gallery/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JS_Gallery/jquery.inview.min.js"></script>
+    <script src="../JS_Gallery/main.js"></script>
+</head>
+
+<body>
+    <!-- header ここから -->
+    <header id="header">
+        <h1 class="header-logo">
+            <a href="#"><img src="../IMG_Gallery/logo.svg" alt="FA EXHIBITION"></a>
+        </h1>
+        <nav id="header-nav">
+            <ul class="nav-menu">
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">INFORMATION</a></li>
+                <li><a href="#">GALLAEY</a></li>
+                <li><a href="#">ACCESS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <!-- header ここまで -->
+    <main>
+        <!-- main-visual ここから -->
+        <div id="main-visual">
+            <img src="../IMG_Gallery/mainvisual1.jpg" alt="メイン画像1">
+            <img src="../IMG_Gallery/mainvisual2.jpg" alt="メイン画像2">
+            <img src="../IMG_Gallery/mainvisual3.jpg" alt="メイン画像3">
+        </div>
+        <!-- main-visual ここまで -->
+        <!-- site-title ここから -->
+        <h1 class="site-title inview fadein">
+            Hello Flower!<br>FA EXHIBITION<br>2021
+        </h1>
+        <!-- site-title ここまで -->
+        <!-- information ここから -->
+        <section id="information" class="inview fadein">
+            <h2 class="text-title">INFORMATION</h2>
+            <p>
+                <span class="info-date-en">2021 JUL1(THU)-3(SAT)</span>
+                <span class="info-time-en">DAY1 10am-6pm OTHER 10am-5:30pm</span>
+            </p>
+            <p class="info-place">at PARK SIDE HALL</p>
+            <p>
+                <span class="info-date-ja">2021年7月1日(木)ー3日(土)</span>
+                <span class="info-time-ja">Day1 10時〜18時 その他10時〜17時30分</span>
+            </p>
+        </section>
+        <!-- information ここまで -->
+        <!-- side-button ここから -->
+        <div id="side-button">
+            <a href="#">FOR EXHIBITOR</a>
+            <a href="#">FOR VISITOR</a>
+        </div>
+        <!-- side-button ここまで -->
+        <!-- gallery ここから -->
+        <section id="gallery">
+            <div class="wrapper">
+                <h2 class="text-title inview fadein">GALLERY</h2>
+                <ul class="gallery-list">
+                    <li class="inview fadein"><img src="../IMG_Gallery/flower1.jpg" alt="画像1"></li>
+                    <li class="inview fadein"><img src="../IMG_Gallery/flower2.jpg" alt="画像2"></li>
+                    <li class="inview fadein"><img src="../IMG_Gallery/flower3.jpg" alt="画像3"></li>
+                    <li class="inview fadein"><img src="../IMG_Gallery/flower4.jpg" alt="画像4"></li>
+                    <li class="inview fadein"><img src="../IMG_Gallery/flower5.jpg" alt="画像5"></li>
+                    <li class="inview fadein"><img src="../IMG_Gallery/flower6.jpg" alt="画像6"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- gallery ここまで -->
+        <!-- access ここから -->
+        <section id="access">
+            <h2 class="text-title">ACCESS</h2>
+            <address>
+                <span class="access-place">PARK SIDE HALL</span>
+                <span class="access-address-ja">〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL</span>
+                <span class="access-address-en">PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo</span>
+                Tel: 03-1111-1111<br>
+                E-mail: info@xxxxxxx.jp
+            </address>
+            <a href="#" class="google-map">GOOGLE MAP</a>
+        </section>
+        <!-- access ここまで -->
+        <!-- contact ここから -->
+        <section id="contact">
+            <div class="wrapper">
+                <h2 class="text-title">CONTACT</h2>
+                <a href="#" class="contact-button">出展に関するお問い合わせ</a>
+                <a href="#" class="contact-button">その他のお問い合わせ</a>
+            </div>
+        </section>
+        <!-- contact ここまで -->
+        <div class="background"></div>
+    </main>
+    <!-- footer ここから -->
+    <footer id="footer">
+        <div class="wrapper">
+            <p>FA EXHIBITION</p>
+            <address>
+                〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
+                Tel: 03-1111-1111<br>
+                E-mail: info@xxxxxxx.jp
+            </address>
+            <div class="footer-menu">
+                <ul class="sns-menu">
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+                <div class="policy-small">
+                    <a href="#">PRIVACY POLICY</a>
+                    <small>&copy;FA EXHIBITION</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ここまで -->
+</body>
+
+</html>
