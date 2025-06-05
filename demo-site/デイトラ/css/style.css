@@ -1,0 +1,529 @@
+@charset "utf-8";
+
+/* 全体設定 sp用--------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-rendering: optimizeLegibility;
+    background: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner {
+    max-width: calc(100% - 70px);
+    width: 620px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text-big {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.text-header {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.textl {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.textm {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* 全体設定 pc用---------------------------------------- */
+@media screen and (min-width:768px) {
+    .inner {
+        max-width: calc(100% - 270px);
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-header {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .textl {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    .textm {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+/* header sp用 -----------------------------------------*/
+header {
+    background-color: #fff;
+    padding: 30px;
+    width: auto;
+    height: auto;
+
+}
+
+.header-title {
+    text-align: center;
+    margin: 20px 0 45px;
+
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 5px;
+}
+
+.header-nav .textm a {
+    font-weight: 600;
+    color: #000;
+}
+
+/* header pc用 -----------------------------------------*/
+
+
+@media screen and (min-width:768px) {
+    header {
+        background-color: #fff;
+        padding: 0;
+        width: auto;
+        height: auto;
+
+    }
+
+    .header-title {
+        text-align: left;
+        margin: 0;
+        padding: 15px 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 12.5%;
+        float: left;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        padding: 15px 0;
+        margin-bottom: 0;
+        margin: 10px 0;
+        margin-right: 17%;
+        float: right;
+    }
+
+    .header-nav .textm a {
+        font-weight: 600;
+        color: #000;
+    }
+}
+
+@media screen and (max-width:1100px) and (min-width:769px) {
+    .text-header {
+        font-size: 1.2rem;
+    }
+
+    .header-nav .textm {
+        font-size: .8rem;
+    }
+}
+
+/* .key-visual sp用ーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.key-visual_sp {
+    width: auto;
+    height: auto;
+    background: url(../img/main-vsual-nontitle.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 240px 15px;
+    display: block;
+}
+
+.key-visual_pc {
+    display: none;
+}
+
+.key-visual-title {
+    line-height: 95px;
+    margin: 10px 0 40px;
+}
+
+.key-visual-lead {
+    margin-bottom: 15px;
+}
+
+.key-visual-lead .textm {
+    font-weight: 300;
+}
+
+
+/* .key-visual pc用ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+@media screen and (min-width:768px) {
+    .key-visual_sp {
+        display: none;
+    }
+
+    .key-visual_pc {
+        width: auto;
+        height: 347px;
+        display: block;
+        background: url(../img/main-vsual.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* main ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* sec01 sp用ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.sec01 {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding: 50px 0;
+}
+
+.sec01-title {
+    margin: 110px 0 60px;
+}
+
+.sec01-visual {
+    margin-bottom: 50px;
+}
+
+.sec01-visual img {
+    max-width: calc(100% - 70px);
+    /* 画面幅から左右35pxずつ引いた幅 */
+    width: 615px;
+    /* 基本のサイズ */
+    height: auto;
+    /* 比率を維持 */
+    max-height: 415px;
+    /* 最大の高さを指定 */
+}
+
+.sec01-description {
+    margin-bottom: 20px;
+}
+
+.sec01-description .textm {
+    text-align: left;
+}
+
+/* sec01 pc用　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+@media screen and (min-width:1300px) {
+    .sec01 {
+        padding: 30px 0;
+    }
+
+    .sec01-title {
+        margin: 20px 0 40px;
+    }
+
+    .sec01-visual {
+        margin-bottom: 10px;
+        float: left;
+        width: 37.7%;
+    }
+
+    .sec01-visual img {
+        width: 100%;
+        max-width: 100%;
+        min-width: 400px;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .sec01-description {
+        overflow: hidden;
+        line-height: 1.75;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sec01 {
+        padding: 30px 0;
+    }
+
+    .sec01-title {
+        margin: 20px 0 40px;
+    }
+
+    .sec01-visual {
+        margin-bottom: 10px;
+        float: left;
+        width: 50%;
+    }
+
+    .sec01-visual img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .sec01-description {
+        overflow: hidden;
+        line-height: 1.75;
+        padding-left: 30px;
+    }
+}
+
+/* sec02 sp用ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.sec02 {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding: 40px 0;
+}
+
+.sec02-title {
+    margin: 10px 0 65px;
+}
+
+.sec02-content-box {
+    width: auto;
+    margin-bottom: 40px;
+}
+
+.sec02-content-box img {
+    max-width: 620px;
+    /* 画面幅から左右35pxずつ引いた幅 */
+    width: 100%;
+    /* 基本のサイズ */
+    height: auto;
+    /* 比率を維持 */
+    max-height: 310px;
+}
+
+.sec02-content-box .textm {
+    text-align: left;
+    display: block;
+    overflow: hidden;
+}
+
+/* sec02 pc用ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+
+@media screen and (min-width:768px) {
+    .sec02 {
+        padding: 20px 0;
+    }
+
+    .sec02-title {
+        margin: 10px 0 40px;
+    }
+
+    .sec02-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .sec02-content-box {
+        margin-bottom: 10px;
+    }
+
+    .sec02-content-box img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+/* sec03 sp用ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.sec03 {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding: 60px 0;
+}
+
+.sec03-title {
+    margin: 20px 0 40px;
+}
+
+.sec03-title .textl {
+    margin-bottom: 65px;
+}
+
+.sec03-title .textm {
+    font-size: 20px;
+}
+
+.sec03-email-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* フォームの最大幅を設定 */
+    margin: 0 auto;
+}
+
+.sec03-email-form input {
+    width: 620px;
+    max-width: calc(100% - 70px);
+    padding: 30px 20px;
+    font-size: 33px;
+    border: 6px solid #ccc;
+    border-radius: 50px;
+    margin: 0 auto;
+
+}
+
+.sec03-email-form button {
+    width: 620px;
+    max-width: calc(100% - 70px);
+    padding: 50px 0;
+    font-size: 42px;
+    font-weight: 600;
+    background-color: #da6b64;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 45px auto;
+    margin-bottom: 145px;
+}
+
+.sec03-email-form button:hover {
+    background-color: #f9918b;
+}
+
+/* sec03 pc用ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+@media screen and (min-width:768px) {
+    .sec03 {
+        padding: 20px 0;
+    }
+
+    .sec03-title {
+        margin: 25px 0 10px;
+    }
+
+    .sec03-title .textl {
+        margin-bottom: 40px;
+    }
+
+    .sec03-title .textm {
+        font-size: 12px;
+    }
+
+    .sec03-email-form input {
+        width: 45%;
+        max-width: 100%;
+        padding: 15px 10px;
+        font-size: 15px;
+        border: 3px solid #ccc;
+    }
+
+    .sec03-email-form button {
+        width: 40%;
+        max-width: 100%;
+        padding: 20px 0;
+        font-size: 20px;
+        margin: 20px auto;
+        margin-bottom: 80px;
+    }
+}
+
+/* footer sp用 ---------------------------------------------*/
+footer {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+}
+
+.footer-title {
+    text-align: center;
+    padding: 30px 0;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-title::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    /* 左に30pxのスペース */
+    width: calc(100% - 70px);
+    /* 画面幅から左右30pxずつ引く */
+    border-top: 2px solid #ccc;
+    /* 上部にボーダーを作成 */
+}
+
+.footer-title small {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* footer pc用 ---------------------------------------------*/
+
+@media screen and (min-width:768px) {
+    .footer-title {
+        text-align: right;
+        padding: 10px 0;
+        padding-right: 135px;
+        margin: 10px auto;
+        margin-bottom: 30px;
+    }
+
+    .footer-title::before {
+        left: 135px;
+        /* 左に30pxのスペース */
+        width: calc(100% - 270px);
+        /* 画面幅から左右30pxずつ引く */
+    }
+
+    .footer-title small {
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
